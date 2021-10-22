@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PlanesComponent } from './components/planes/planes.component';
 import { TimePipe } from './pipes/time.pipe';
+import { PlanesAllComponent } from './components/planes-all/planes-all.component';
+import { PlaneComponent } from './components/plane/plane.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { TimePipe } from './pipes/time.pipe';
     FooterComponent,
     PlanesComponent,
     TimePipe,
+    PlanesAllComponent,
+    PlaneComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,7 @@ import { TimePipe } from './pipes/time.pipe';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'planes', component: PlanesComponent },
-      // { path: 'planes/:id', component: PlaneComponent },
+      { path: 'planes-2', component: PlanesAllComponent },
       { path: '**', redirectTo: '', pathMatch: 'full' },
     ]),
   ],

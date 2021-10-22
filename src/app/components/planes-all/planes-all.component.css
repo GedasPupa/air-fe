@@ -1,0 +1,21 @@
+.planes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.newPlane {
+  padding: 50px;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+h6, form > p {
+  display: inline-block;
+  width: 100%;
+  /* top: 30px; */
+}
+.ng-invalid:not(form).ng-touched {
+  border: 1px solid salmon;
+}
